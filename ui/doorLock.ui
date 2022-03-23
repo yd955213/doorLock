@@ -1,0 +1,2142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1158</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>无线网关工具</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>参数设置</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_24">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout" stretch="5,1">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,5">
+            <item>
+             <widget class="QWidget" name="widget" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>400</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <item>
+                  <widget class="QWidget" name="widget_4" native="true">
+                   <property name="font">
+                    <font>
+                     <family>宋体</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_9">
+                    <item>
+                     <spacer name="verticalSpacer">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="widget" native="true">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>宋体</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_6">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_2">
+                         <item>
+                          <widget class="QLabel" name="label">
+                           <property name="font">
+                            <font>
+                             <family>宋体</family>
+                             <pointsize>12</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>设备类型选择：</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QRadioButton" name="k2_A_RadioButton">
+                           <property name="enabled">
+                            <bool>false</bool>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <family>宋体</family>
+                             <pointsize>12</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>K2_A</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QRadioButton" name="K2_B_RadioButton">
+                           <property name="enabled">
+                            <bool>false</bool>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <family>宋体</family>
+                             <pointsize>12</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>K2_B</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QRadioButton" name="K4_RadioButton">
+                           <property name="enabled">
+                            <bool>false</bool>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <family>宋体</family>
+                             <pointsize>12</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>K4</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QRadioButton" name="lock_RadioButton">
+                           <property name="font">
+                            <font>
+                             <family>宋体</family>
+                             <pointsize>12</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>Lock</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <spacer name="horizontalSpacer">
+                           <property name="font">
+                            <font>
+                             <family>宋体</family>
+                             <pointsize>12</pointsize>
+                            </font>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>40</width>
+                             <height>20</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_8">
+                      <item>
+                       <widget class="QWidget" name="widget_6" native="true">
+                        <property name="font">
+                         <font>
+                          <family>宋体</family>
+                          <pointsize>12</pointsize>
+                         </font>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout">
+                         <item row="4" column="0">
+                          <widget class="QLabel" name="label_5">
+                           <property name="font">
+                            <font>
+                             <family>宋体</family>
+                             <pointsize>12</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>子网掩码：</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="4" column="1">
+                          <widget class="QLineEdit" name="subnetMaskLineEdit">
+                           <property name="font">
+                            <font>
+                             <family>宋体</family>
+                             <pointsize>12</pointsize>
+                            </font>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="1">
+                          <widget class="QLineEdit" name="ipLineEdit">
+                           <property name="font">
+                            <font>
+                             <family>宋体</family>
+                             <pointsize>12</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>172.168.120.165</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="2" column="0">
+                          <widget class="QLabel" name="label_3">
+                           <property name="font">
+                            <font>
+                             <family>宋体</family>
+                             <pointsize>12</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>远程地址：</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="0">
+                          <widget class="QLabel" name="label_2">
+                           <property name="font">
+                            <font>
+                             <family>宋体</family>
+                             <pointsize>12</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>MAC 地址：</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="1">
+                          <widget class="QLineEdit" name="macLineEdit">
+                           <property name="enabled">
+                            <bool>false</bool>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <family>宋体</family>
+                             <pointsize>12</pointsize>
+                            </font>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="2" column="1">
+                          <widget class="QLineEdit" name="remoteIpLineEdit">
+                           <property name="font">
+                            <font>
+                             <family>宋体</family>
+                             <pointsize>12</pointsize>
+                            </font>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="0">
+                          <widget class="QLabel" name="label_4">
+                           <property name="font">
+                            <font>
+                             <family>宋体</family>
+                             <pointsize>12</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>IP  地址：</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="3" column="0">
+                          <widget class="QLabel" name="label_29">
+                           <property name="text">
+                            <string>网关地址：</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="3" column="1">
+                          <widget class="QLineEdit" name="gatewayLineEdit"/>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_4">
+                        <item>
+                         <widget class="QRadioButton" name="broadcastRadioButton">
+                          <property name="font">
+                           <font>
+                            <family>宋体</family>
+                            <pointsize>12</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>广播</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QRadioButton" name="peerToPeerRadioButton">
+                          <property name="font">
+                           <font>
+                            <family>宋体</family>
+                            <pointsize>12</pointsize>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>点对点</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_2">
+                          <property name="font">
+                           <font>
+                            <family>宋体</family>
+                            <pointsize>12</pointsize>
+                           </font>
+                          </property>
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_3">
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_5">
+                          <item>
+                           <widget class="QPushButton" name="searchButton">
+                            <property name="font">
+                             <font>
+                              <family>宋体</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>搜索设备</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="setNetworkButton">
+                            <property name="font">
+                             <font>
+                              <family>宋体</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>设置网络参数</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="widget_5" native="true">
+                   <property name="font">
+                    <font>
+                     <family>宋体</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_10">
+                    <item>
+                     <widget class="QTableWidget" name="deviceNetworkTable">
+                      <property name="maximumSize">
+                       <size>
+                        <width>362</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>宋体</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <attribute name="horizontalHeaderMinimumSectionSize">
+                       <number>24</number>
+                      </attribute>
+                      <attribute name="horizontalHeaderDefaultSectionSize">
+                       <number>90</number>
+                      </attribute>
+                      <attribute name="horizontalHeaderHighlightSections">
+                       <bool>true</bool>
+                      </attribute>
+                      <column>
+                       <property name="text">
+                        <string>mac地址</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>宋体</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>设备IP地址</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>宋体</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>软件版本号</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>宋体</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>硬件版本号</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>宋体</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                      </column>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_2" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <layout class="QGridLayout" name="gridLayout_3">
+                 <item row="1" column="0">
+                  <widget class="QTabWidget" name="tabWidget">
+                   <property name="font">
+                    <font>
+                     <family>宋体</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="currentIndex">
+                    <number>0</number>
+                   </property>
+                   <widget class="QWidget" name="gateway_params">
+                    <property name="font">
+                     <font>
+                      <family>宋体</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <attribute name="title">
+                     <string>网关参数</string>
+                    </attribute>
+                    <layout class="QFormLayout" name="formLayout">
+                     <property name="horizontalSpacing">
+                      <number>0</number>
+                     </property>
+                     <property name="verticalSpacing">
+                      <number>6</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>9</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>9</number>
+                     </property>
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="label_6">
+                       <property name="font">
+                        <font>
+                         <family>宋体</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>初始化：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QWidget" name="widget_10" native="true">
+                       <property name="font">
+                        <font>
+                         <family>宋体</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_10">
+                        <property name="spacing">
+                         <number>0</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_6">
+                          <item>
+                           <widget class="QPushButton" name="resetAndRestartGatewyButton">
+                            <property name="font">
+                             <font>
+                              <family>宋体</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>复位重启</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="gatewayRestoreFactoryButton">
+                            <property name="font">
+                             <font>
+                              <family>宋体</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>网关恢复出厂</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="resetGatewayLoraCommunicationButton">
+                            <property name="text">
+                             <string>网关lora通信参数初始化</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <spacer name="horizontalSpacer_4">
+                            <property name="font">
+                             <font>
+                              <family>宋体</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_7">
+                       <property name="font">
+                        <font>
+                         <family>宋体</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>时间参数：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QWidget" name="widget_7" native="true">
+                       <property name="font">
+                        <font>
+                         <family>宋体</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_14">
+                        <property name="spacing">
+                         <number>0</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <layout class="QVBoxLayout" name="verticalLayout_12">
+                          <item>
+                           <layout class="QHBoxLayout" name="horizontalLayout_7">
+                            <item>
+                             <widget class="QPushButton" name="readTimeButton">
+                              <property name="font">
+                               <font>
+                                <family>宋体</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>读取时间</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QPushButton" name="setTimeButton">
+                              <property name="font">
+                               <font>
+                                <family>宋体</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>设置时间</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="dateTimeLineEdit"/>
+                            </item>
+                            <item>
+                             <spacer name="horizontalSpacer_6">
+                              <property name="font">
+                               <font>
+                                <family>宋体</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                           </layout>
+                          </item>
+                          <item>
+                           <widget class="QRadioButton" name="getLocalTimeRadioButton">
+                            <property name="font">
+                             <font>
+                              <family>宋体</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>获取当前时间</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QLabel" name="label_9">
+                       <property name="font">
+                        <font>
+                         <family>宋体</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>入网状态：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="1">
+                      <widget class="QWidget" name="widget_9" native="true">
+                       <property name="font">
+                        <font>
+                         <family>宋体</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_11">
+                        <property name="spacing">
+                         <number>0</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <layout class="QVBoxLayout" name="verticalLayout_4">
+                          <item>
+                           <layout class="QHBoxLayout" name="horizontalLayout_9">
+                            <item>
+                             <widget class="QPushButton" name="openAllowConnextToTheNetworkButton">
+                              <property name="font">
+                               <font>
+                                <family>宋体</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>开启允许入网</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QPushButton" name="closeAllowConnextToTheNetworkButton">
+                              <property name="font">
+                               <font>
+                                <family>宋体</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>关闭允许入网</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QPushButton" name="readIsAlowConnectNetworkStatus">
+                              <property name="font">
+                               <font>
+                                <family>宋体</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>读取网关无线状态</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <spacer name="horizontalSpacer_3">
+                              <property name="font">
+                               <font>
+                                <family>宋体</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                           </layout>
+                          </item>
+                          <item>
+                           <layout class="QHBoxLayout" name="horizontalLayout_8">
+                            <item>
+                             <widget class="QRadioButton" name="isCheackAlowNetworkRadioButton">
+                              <property name="font">
+                               <font>
+                                <family>宋体</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>正在检查</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QRadioButton" name="errorStatusAllowNetworkRadioButton">
+                              <property name="font">
+                               <font>
+                                <family>宋体</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>状态出错</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QRadioButton" name="unUseAllowNetWorkRadioButton">
+                              <property name="font">
+                               <font>
+                                <family>宋体</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>空闲</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QRadioButton" name="isAllowNetworkRadioButton">
+                              <property name="font">
+                               <font>
+                                <family>宋体</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>允许入网</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <spacer name="horizontalSpacer_5">
+                              <property name="font">
+                               <font>
+                                <family>宋体</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                           </layout>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="3" column="0">
+                      <widget class="QLabel" name="label_10">
+                       <property name="font">
+                        <font>
+                         <family>宋体</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>读FLASH：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="1">
+                      <widget class="QWidget" name="widget_12" native="true">
+                       <property name="font">
+                        <font>
+                         <family>宋体</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_13">
+                        <property name="spacing">
+                         <number>0</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_11">
+                          <item>
+                           <widget class="QLabel" name="label_11">
+                            <property name="font">
+                             <font>
+                              <family>宋体</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>类型选择：</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QComboBox" name="readFlashParamsComboBox">
+                            <property name="font">
+                             <font>
+                              <family>宋体</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <item>
+                             <property name="text">
+                              <string>参数</string>
+                             </property>
+                            </item>
+                            <item>
+                             <property name="text">
+                              <string>名单</string>
+                             </property>
+                            </item>
+                            <item>
+                             <property name="text">
+                              <string>刷卡记录</string>
+                             </property>
+                            </item>
+                            <item>
+                             <property name="text">
+                              <string>指针记录</string>
+                             </property>
+                            </item>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_12">
+                            <property name="font">
+                             <font>
+                              <family>宋体</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>块号：</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QSpinBox" name="readFlashblockSpinBox"/>
+                          </item>
+                          <item>
+                           <spacer name="horizontalSpacer_8">
+                            <property name="font">
+                             <font>
+                              <family>宋体</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="readFlashButton">
+                            <property name="font">
+                             <font>
+                              <family>宋体</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>读FLASH</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <spacer name="horizontalSpacer_7">
+                            <property name="font">
+                             <font>
+                              <family>宋体</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="4" column="0">
+                      <widget class="QLabel" name="label_8">
+                       <property name="font">
+                        <font>
+                         <family>宋体</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>绑定设备：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="4" column="1">
+                      <widget class="QWidget" name="widget_8" native="true">
+                       <property name="font">
+                        <font>
+                         <family>宋体</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_16">
+                        <property name="spacing">
+                         <number>0</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <layout class="QVBoxLayout" name="verticalLayout_15">
+                          <item>
+                           <widget class="QWidget" name="widget_13" native="true">
+                            <property name="font">
+                             <font>
+                              <family>宋体</family>
+                              <pointsize>12</pointsize>
+                             </font>
+                            </property>
+                            <layout class="QFormLayout" name="formLayout_2">
+                             <property name="leftMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="topMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="rightMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="bottomMargin">
+                              <number>0</number>
+                             </property>
+                             <item row="0" column="0">
+                              <widget class="QLabel" name="label_13">
+                               <property name="font">
+                                <font>
+                                 <family>宋体</family>
+                                 <pointsize>12</pointsize>
+                                </font>
+                               </property>
+                               <property name="text">
+                                <string>设备物理地址：</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="1">
+                              <widget class="QWidget" name="widget_11" native="true">
+                               <layout class="QHBoxLayout" name="horizontalLayout_25">
+                                <property name="spacing">
+                                 <number>0</number>
+                                </property>
+                                <property name="leftMargin">
+                                 <number>0</number>
+                                </property>
+                                <property name="topMargin">
+                                 <number>0</number>
+                                </property>
+                                <property name="rightMargin">
+                                 <number>0</number>
+                                </property>
+                                <property name="bottomMargin">
+                                 <number>0</number>
+                                </property>
+                                <item>
+                                 <widget class="QLineEdit" name="lineEdit_5">
+                                  <property name="font">
+                                   <font>
+                                    <family>宋体</family>
+                                    <pointsize>12</pointsize>
+                                   </font>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <spacer name="horizontalSpacer_19">
+                                  <property name="orientation">
+                                   <enum>Qt::Horizontal</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>40</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                               </layout>
+                              </widget>
+                             </item>
+                             <item row="1" column="0">
+                              <widget class="QLabel" name="label_14">
+                               <property name="font">
+                                <font>
+                                 <family>宋体</family>
+                                 <pointsize>12</pointsize>
+                                </font>
+                               </property>
+                               <property name="text">
+                                <string>设备物理地址：</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="1">
+                              <widget class="QWidget" name="widget_18" native="true">
+                               <layout class="QHBoxLayout" name="horizontalLayout_26">
+                                <property name="leftMargin">
+                                 <number>0</number>
+                                </property>
+                                <property name="topMargin">
+                                 <number>0</number>
+                                </property>
+                                <property name="rightMargin">
+                                 <number>0</number>
+                                </property>
+                                <item>
+                                 <widget class="QLineEdit" name="lineEdit_6">
+                                  <property name="font">
+                                   <font>
+                                    <family>宋体</family>
+                                    <pointsize>12</pointsize>
+                                   </font>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <spacer name="horizontalSpacer_20">
+                                  <property name="orientation">
+                                   <enum>Qt::Horizontal</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>40</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                               </layout>
+                              </widget>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                          <item>
+                           <layout class="QHBoxLayout" name="horizontalLayout_12">
+                            <item>
+                             <widget class="QPushButton" name="pushButton_12">
+                              <property name="font">
+                               <font>
+                                <family>宋体</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>绑定逻辑地址</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QPushButton" name="pushButton_13">
+                              <property name="font">
+                               <font>
+                                <family>宋体</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>下载</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QPushButton" name="pushButton_14">
+                              <property name="font">
+                               <font>
+                                <family>宋体</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>删除</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QPushButton" name="pushButton_15">
+                              <property name="font">
+                               <font>
+                                <family>宋体</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>读取</string>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="lock_params">
+                    <attribute name="title">
+                     <string>门锁参数</string>
+                    </attribute>
+                    <layout class="QFormLayout" name="formLayout_3">
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="label_15">
+                       <property name="text">
+                        <string>门锁号：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QWidget" name="widget_15" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_16">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QComboBox" name="doorLockNumbercomboBox">
+                          <property name="minimumSize">
+                           <size>
+                            <width>150</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="editable">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_12">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>402</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_18">
+                       <property name="text">
+                        <string>绑定操作：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QWidget" name="widget_14" native="true">
+                       <layout class="QVBoxLayout" name="verticalLayout_18">
+                        <property name="spacing">
+                         <number>0</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <layout class="QVBoxLayout" name="verticalLayout_17">
+                          <item>
+                           <layout class="QHBoxLayout" name="horizontalLayout_13">
+                            <item>
+                             <widget class="QPushButton" name="downloadToTheGatewayButton">
+                              <property name="text">
+                               <string>下载至网关</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QPushButton" name="delteFormTheGatewayButton">
+                              <property name="text">
+                               <string>从网关中删除</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <spacer name="horizontalSpacer_10">
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                           </layout>
+                          </item>
+                          <item>
+                           <layout class="QHBoxLayout" name="horizontalLayout_14">
+                            <item>
+                             <widget class="QPushButton" name="isExistsInTheGatewaytButton">
+                              <property name="text">
+                               <string>是否存在网关中</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QRadioButton" name="isInTheGatewayRadioButton">
+                              <property name="enabled">
+                               <bool>false</bool>
+                              </property>
+                              <property name="text">
+                               <string>是</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QRadioButton" name="notInTheGatewayRadioButton">
+                              <property name="enabled">
+                               <bool>false</bool>
+                              </property>
+                              <property name="text">
+                               <string>否</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QRadioButton" name="notCheackWhetherIntheGatewayradioButton">
+                              <property name="enabled">
+                               <bool>false</bool>
+                              </property>
+                              <property name="text">
+                               <string>未检测</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <spacer name="horizontalSpacer_9">
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                           </layout>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QLabel" name="label_16">
+                       <property name="text">
+                        <string>权限操作：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="1">
+                      <layout class="QHBoxLayout" name="horizontalLayout_15">
+                       <item>
+                        <widget class="QLabel" name="label_17">
+                         <property name="text">
+                          <string>卡号：</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="cardNemberLineEdit">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="downloarAuthorityButton">
+                         <property name="text">
+                          <string>下载</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="readAuthorityButton">
+                         <property name="text">
+                          <string>读取</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="hasAuthorityRadioButton">
+                         <property name="enabled">
+                          <bool>false</bool>
+                         </property>
+                         <property name="text">
+                          <string>有权限</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="noAuthorityradioButton">
+                         <property name="enabled">
+                          <bool>false</bool>
+                         </property>
+                         <property name="text">
+                          <string>无权限</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_11">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="3" column="0">
+                      <widget class="QLabel" name="label_19">
+                       <property name="text">
+                        <string>批量操作：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="1">
+                      <widget class="QWidget" name="widget_16" native="true">
+                       <layout class="QVBoxLayout" name="verticalLayout_21">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <layout class="QVBoxLayout" name="verticalLayout_20">
+                          <item>
+                           <layout class="QHBoxLayout" name="horizontalLayout_17">
+                            <item>
+                             <widget class="QLabel" name="label_20">
+                              <property name="text">
+                               <string>卡号：</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="cardNumberBatchLineEdit">
+                              <property name="minimumSize">
+                               <size>
+                                <width>100</width>
+                                <height>0</height>
+                               </size>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <spacer name="horizontalSpacer_14">
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                            <item>
+                             <widget class="QLabel" name="label_22">
+                              <property name="text">
+                               <string>批量操作个数：</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="numbersLineEdit">
+                              <property name="minimumSize">
+                               <size>
+                                <width>100</width>
+                                <height>0</height>
+                               </size>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <spacer name="horizontalSpacer_15">
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                           </layout>
+                          </item>
+                          <item>
+                           <layout class="QHBoxLayout" name="horizontalLayout_18">
+                            <item>
+                             <widget class="QPushButton" name="downloadAuthorityIncrementalButton">
+                              <property name="text">
+                               <string>增量下载</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QPushButton" name="deleteAuthorityIncrementalButton">
+                              <property name="text">
+                               <string>增量删除</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QPushButton" name="readAuthorityIncrementalButton">
+                              <property name="text">
+                               <string>增量读取权限</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <spacer name="horizontalSpacer_13">
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                           </layout>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="4" column="0">
+                      <widget class="QLabel" name="label_21">
+                       <property name="text">
+                        <string>清除数据：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="4" column="1">
+                      <widget class="QWidget" name="widget_19" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_20">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_19">
+                          <item>
+                           <widget class="QLabel" name="label_24">
+                            <property name="text">
+                             <string>类型选择：</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QRadioButton" name="listOfNamesClearDataRadioButton">
+                            <property name="text">
+                             <string>名单</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QRadioButton" name="cardRecordClearDataRadioButton">
+                            <property name="text">
+                             <string>刷卡记录</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="claerDataButton">
+                            <property name="text">
+                             <string>清除数据</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <spacer name="horizontalSpacer_16">
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="5" column="0">
+                      <widget class="QLabel" name="label_23">
+                       <property name="text">
+                        <string>门锁状态：</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="5" column="1">
+                      <layout class="QHBoxLayout" name="horizontalLayout_21">
+                       <item>
+                        <widget class="QPushButton" name="readDoorLockStatusButton">
+                         <property name="text">
+                          <string>读取门锁状态</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_26">
+                         <property name="text">
+                          <string>电池电量：</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="batteryPowerLineEdit">
+                         <property name="minimumSize">
+                          <size>
+                           <width>50</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_25">
+                         <property name="text">
+                          <string>门锁程序版本：</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="doorLockVensonLineEdit">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_17">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_3" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>宋体</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_24">
+             <item>
+              <widget class="QTextEdit" name="logsTextEdit"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>数据采集</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_22">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_19">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_22">
+            <item>
+             <widget class="QLabel" name="label_27">
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>记录指针位置：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="recordPoitineSpinBox">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>80</width>
+                <height>0</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_28">
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>数量：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="readRecordNumbersSpinBox">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>120</width>
+                <height>0</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_18">
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_23">
+            <item>
+             <widget class="QPushButton" name="readRecordButton">
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>读取记录信息</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="bCButton">
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>补采记录</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="atuoReceiveDataButton">
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>自动采集数据</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="stopReceiveDataButton">
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>停止自动采集</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="clearRecordTableButton">
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>清空表格</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_17" native="true">
+          <property name="font">
+           <font>
+            <family>宋体</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_23">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QTableWidget" name="RecordTableWidget">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>宋体</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <column>
+              <property name="text">
+               <string>序号</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>网关记录号</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>门锁设备号</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>门锁记录号</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>卡号</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>刷卡时间</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>开门方式</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>电池电量</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1158</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
