@@ -20,7 +20,8 @@ def _main():
         y = (desktop.height() - main_ui.height()) // 2
         main_ui.move(x, y)  # 移动
         main_ui.show()
-        sys.exit(app.exec_())
+        app.exec_()
+        # sys.exit(app.exec_())
     except:
         traceback.print_exc()
         if app != 0:

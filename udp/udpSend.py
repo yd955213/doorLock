@@ -14,27 +14,33 @@ import traceback
 from PyQt5.QtCore import pyqtSignal, QThread
 
 from tools.logs import logger
+from ui.myQMessageBox import MyQMessageBox
 
 default_server_port = 18087
 default_device_port = 18088
 
 
 class MyUpdServer(QThread):
-
     receive_data_change = pyqtSignal(str, str)
     running_thread = True
 
-    def __init__(self, server_port_1=None):
+    def __init__(self, server_port_1=None, device_port_1=None):
         super().__init__()
+        self.udp_server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         if server_port_1 is None or server_port_1 < 0 or server_port_1 > 65535:
             self.server_port = default_server_port
         else:
             self.server_port = server_port_1
 
+        if device_port_1 is None or device_port_1 < 0 or device_port_1 > 65535:
+            self.device_port = default_device_port
+        else:
+            self.device_port = device_port_1
+
+    def bind(self):
         # if self.udp_server is None:
         print("绑定通信端口：" + str(self.server_port))
         try:
-            self.udp_server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
             self.udp_server.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
             self.udp_server.bind(("", self.server_port))
         except:
@@ -42,7 +48,7 @@ class MyUpdServer(QThread):
         # self.udp_server.settimeout(5)
 
     def run(self):
-        print("开启接收线程")
+        print("开启接收线程, 端口：{}".format(self.server_port))
         while self.running_thread:
             self.receive()
         else:
@@ -54,7 +60,8 @@ class MyUpdServer(QThread):
             receiveData = receiveData.hex().upper()
             logger.info('ip({})返回数据：{}'.format(ip, receiveData))
             # data_processing(receiveData)
-            if receiveData is not None and len(receiveData) >= 22:
+
+            if receiveData is not None:
                 self.receive_data_change.emit(ip[0], receiveData)
         except Exception as e:
             # traceback.print_exc()
@@ -67,7 +74,7 @@ class MyUpdServer(QThread):
         if ip is None:
             ip = "<broadcast>"
         if port is None or port < 0 or port > 65535:
-            port = default_device_port
+            port = self.device_port
 
         receiveData = None
         try:
@@ -76,11 +83,14 @@ class MyUpdServer(QThread):
         except Exception as e:
             traceback.print_exc()
             logger.error('UDP 通信异常，异常信息：{}，向ip({})发送数据:{}'.format(e, ip, send_data))
+            if ip is None:
+                q = MyQMessageBox("通讯一场", "设备mac为空， 请先搜索设备，并选择相应的设备！！！")
         return receiveData
 
     def close(self):
         if self.udp_server is not None:
             try:
+                print("关闭接收线程, 端口：{}".format(self.server_port))
                 self.udp_server.close()
             except:
                 traceback.print_exc()

@@ -48,6 +48,7 @@ class Protocol(object):
         if receive_data is None:
             return
         try:
+            self.heard = receive_data[0:2]
             self.device_flag = receive_data[2:4]
             self.device_mac = receive_data[4:10]
             self.command = receive_data[10:12]

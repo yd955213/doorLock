@@ -13,6 +13,7 @@ import traceback
 from PyQt5.QtWidgets import QTableWidgetItem, QMessageBox
 
 import globalVariable
+from conctroller.doorLockController import read_all_door_lock_in_the_gateway
 from entity import DeviceInfo
 from protocol.searchDevice import SearchDevice
 from protocol.setNetworkParams import SetNetworkParams
@@ -109,6 +110,8 @@ def update_table(main_ui, device_info):
         main_ui.deviceNetworkTable.setItem(row, 3, QTableWidgetItem(device_info.hard_version))
         if row == 0 and device_info is not None:
             __update_device_info_line_edits(main_ui, device_info)
+        # 读取网关中存储门锁ID信息
+        read_all_door_lock_in_the_gateway(main_ui, device_info.device_mac)
     except:
         traceback.print_exc()
 
@@ -161,6 +164,7 @@ def clicked_table_event(main_ui):
         device_mac = main_ui.deviceNetworkTable.item(row, 0).text()
         device_info = globalVariable.get_device_info_dic_value(device_mac)
         __update_device_info_line_edits(main_ui, device_info)
+        __update_door_lock_number_comboBox(main_ui, device_mac)
     except:
         traceback.print_exc()
 
@@ -175,3 +179,10 @@ def __update_device_info_line_edits(main_ui, device_info):
     except:
         traceback.print_exc()
 
+
+def __update_door_lock_number_comboBox(main_ui, device_mac):
+    print("点击")
+    main_ui.doorLockNumbercomboBox.clear()
+    lock_list = globalVariable.get_all_door_lock_by_mac(device_mac)
+    if lock_list is not None or lock_list != []:
+        main_ui.doorLockNumbercomboBox.addItems(lock_list)

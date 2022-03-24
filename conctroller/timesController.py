@@ -70,12 +70,7 @@ def read_time_receive_date_process(main_ui, protocol):
     print(protocol.valid_data)
     #     0xYYYYMMDDhhmmssWW：  BCD格式表示时间。如：0x2008080809193005
     # 表示2008年8月8日星期五9时19分30秒。注WW取值：星期日取0x00，星期六取值0x06。
-    date = protocol.valid_data[0:4] + "-" + \
-          protocol.valid_data[4:6] + "-" +\
-          protocol.valid_data[6:8] + " " +\
-          protocol.valid_data[8:10] + ":" +\
-          protocol.valid_data[10:12] + ":" +\
-          protocol.valid_data[12:14] + " "
+    date = get_string_to_time(protocol.valid_data[0:14])
     temp = protocol.valid_data[14:16]
     if temp == "00":
         date += "周日"
@@ -93,6 +88,31 @@ def read_time_receive_date_process(main_ui, protocol):
         date += "周六"
 
     main_ui.dateTimeLineEdit.setText(date)
+
+
+def get_string_to_time(string):
+    data = "None"
+    if len(string) >= 12:
+        data = string[0:4] + "-" + \
+               string[4:6] + "-" + \
+               string[6:8] + " " + \
+               string[8:10] + ":" + \
+               string[10:12] + ":" + \
+               string[12:14] + " "
+    return data
+
+
+def get_string_to_time_1(string):
+    data = "None"
+    if len(string) >= 12:
+        data = "20" + string[0:2] + "-" + \
+               string[2:4] + "-" + \
+               string[4:6] + " " + \
+               string[6:8] + ":" + \
+               string[8:10] + ":" + \
+               string[10:12] + " "
+    return data
+
 
 if __name__ == '__main__':
     TimesThread().start()
